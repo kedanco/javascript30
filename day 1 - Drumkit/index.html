@@ -1,0 +1,98 @@
+<html>
+
+	<head>
+		<title>Javascript Drum Kit</title>
+		<link rel="stylesheet" href="day1-drumkit.css">
+	</head>
+
+	<body>
+
+	<div class="container">
+
+		<h1 id="header">Play The Drums!</h1>
+
+		<div class="drumkit">
+		
+				<div data-key="65" class="key">
+					<kbd>A</kbd>
+					<div class="name">Kick 1</div>
+				</div>
+				<div data-key="83" class="key">
+					<kbd>S</kbd>
+					<div class="name">Kick 2</div>
+				</div>
+				<div data-key="68" class="key">
+					<kbd>D</kbd>
+					<div class="name">Brass</div>
+				</div>
+				<div data-key="70" class="key">
+					<kbd>F</kbd>
+					<div class="name">Snare 1</div>
+				</div>
+				<div data-key="71" class="key">
+					<kbd>G</kbd>
+					<div class="name">Clap</div>
+				</div>
+				<div data-key="72" class="key">
+					<kbd>H</kbd>
+					<div class="name">Tom</div>
+				</div>
+				<div data-key="74" class="key">
+					<kbd>J</kbd>
+					<div class="name">Claves</div>
+				</div>
+				<div data-key="75" class="key">
+					<kbd>K</kbd>
+					<div class="name">Hi-Hat</div>
+				</div>
+
+
+		</div>
+
+	</div>
+
+		<audio data-key="65" src="sounds/vinyl-dirty-kick.wav"></audio>
+		<audio data-key="83" src="sounds/stereo-noise-kick.wav"></audio>
+		<audio data-key="68" src="sounds/brass-sd.wav"></audio>
+		<audio data-key="70" src="sounds/double-snare.wav"></audio>
+		<audio data-key="71" src="sounds/clap.wav"></audio>
+		<audio data-key="72" src="sounds/Electronic-Tom-1.wav"></audio>
+		<audio data-key="74" src="sounds/Claves.wav"></audio>
+		<audio data-key="75" src="sounds/Closed-Hi-Hat-1.wav"></audio>
+
+		<div id="back" class="bottom-links">
+			<a href="http://kedanco.com/projects">Other Projects</a>
+		</div>
+
+		<div id="credits" class="bottom-links">
+				Photo by <a href="https://unsplash.com/photos/BuiBnE4N31U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Israel Palacio</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+		</div>
+
+
+		<script>
+
+			window.addEventListener('keydown', function(e){
+				
+				const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+				console.log(audio);
+				if(!audio) return;
+				audio.currentTime = 0;
+				audio.play();
+
+				const keybox = document.querySelector(`div[data-key="${e.keyCode}"`);
+				keybox.classList.add('playing');
+				audio.currentTime = 0;
+
+				audio.addEventListener("ended",function(){
+
+					keybox.classList.remove('playing');
+				
+				});
+
+			});
+
+		</script>
+
+	</body>
+
+</html>
