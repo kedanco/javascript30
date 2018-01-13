@@ -1,6 +1,6 @@
 
 
-============= Javascript30 ==============
+=============== Javascript30 ================
 =========
 
 <b>My Javascript 30 Notes</b>
@@ -44,7 +44,7 @@ Started 6th Jan 2018
 - fetch, as browser API that returns a promise(something that eventually resolves)
 - .then(returndata) after fetch, return data is still raw and not in the correct format
 - data.json() converts data into json format 
-- .then again, 
+- .then again, to spread and add the data into an array
 - spread '...' (ES6) converts a list like dataset/Nodelist into an array
 - put a var into regex by creating a new RegExp object
 - .match compares array elements against RegExp object
@@ -54,3 +54,8 @@ Started 6th Jan 2018
 - splice (remove at index) different from slice (return substring)
 - 'some' and 'every', array check functions that return a boolean (if some/every element fulfills condition)
 - 'find' returns the object and 'findIndex' returns index of that object
+
+## Project 8: HTML5 Canvas
+- With canvas, you can use ctx(context) to set 2d/3d drawing and dictate draw settings
+- hsl (hue, saturation, lightness) is another way to represent rgb colours
+- ctx commands 'beginPath','moveTo','lineTo' and 'stroke' control the actual drawing on the canvas
