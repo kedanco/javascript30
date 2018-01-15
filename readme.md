@@ -75,3 +75,10 @@ Started 6th Jan 2018
 - You can separate multiple statements in a ternary operation with brackets and comma (a=1,b=2)
 - selecting additional property conditions 'input[type="checkbox"]:checked'
 - use e.target/this to get the element from an eventlistener
+
+## Project 10: Shift-Check Multiple Checkboxes
+- Separating script.js file's contents into different parts (getting elements, functions and event listeners) makes everything look really neat and organised.
+- using flexBasis's percentage value to control the progress bar was new
+- Sometimes, unicode characters prove to be more convenient and flexible than using icons
+- Common video commands to control its movement ('paused', 'play','pause','currentTime')
+
