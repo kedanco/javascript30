@@ -31,7 +31,7 @@ Started 6th Jan 2018
 - Sort: Iterates through contents of array, compares every (a,b) of elements according to condition
 - Every function needs a return statement
 - no 'contains',no 'include', only 'includes'
-- Array.from creates an array from the enclP100 readeosing content
+- Array.from creates an array from the enclosed content
 
 ## Project 5: Flex Panels
 - using display:flex, you can set flex-direction, and flex sizes of the flex items
@@ -59,3 +59,19 @@ Started 6th Jan 2018
 - With canvas, you can use ctx(context) to set 2d/3d drawing and dictate draw settings
 - hsl (hue, saturation, lightness) is another way to represent rgb colours
 - ctx commands 'beginPath','moveTo','lineTo' and 'stroke' control the actual drawing on the canvas
+
+## Project 9: Dev Tools
+- Among the console commands, other than .log and .table, .info, .warning, and .error provide a different type of display
+- %s for string interpolation, %c for css styling
+- assert is like a conditional statement, if (cond) is false, then display message
+- .dir provides additional information about the element
+- group and groupend collapses the messages within as one group, like how selected elements are displayed
+- .count counts the number of time the exact string is printed
+- time and timeEnd displayed the time elapsed for a certain operation
+
+## Project 10: Shift-Check Multiple Checkboxes
+- querySelectorAll returns a NodeList, and after using Array.from conversion, you can call indexOf to check the index of the element from its parent list
+- e.shiftKey is a convenient check (there's also ctrl, alt and meta(cmd) key)
+- You can separate multiple statements in a ternary operation with brackets and comma (a=1,b=2)
+- selecting additional property conditions 'input[type="checkbox"]:checked'
+- use e.target/this to get the element from an eventlistener
