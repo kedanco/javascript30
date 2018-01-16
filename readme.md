@@ -76,9 +76,20 @@ Started 6th Jan 2018
 - selecting additional property conditions 'input[type="checkbox"]:checked'
 - use e.target/this to get the element from an eventlistener
 
-## Project 10: Shift-Check Multiple Checkboxes
+## Project 11: HTML 5 Video Player
 - Separating script.js file's contents into different parts (getting elements, functions and event listeners) makes everything look really neat and organised.
 - using flexBasis's percentage value to control the progress bar was new
 - Sometimes, unicode characters prove to be more convenient and flexible than using icons
 - Common video commands to control its movement ('paused', 'play','pause','currentTime')
 
+## Project 12: Key Sequence Detection
+- Using splice, you can constantly check an array and remove old chars to keep it at a constant size
+- Cornify is a fun library to play with... Maybe next time I can make my own mini library just for fun :)
+
+
+## Project 13: Slide In On Scroll
+- Assign values into well-named variables before going into loops and if statements
+- Debouncing - making sure a function is not called again until a certain amount of time has passed. This ensures you dont have 1 gazillion events happening whenever you scroll
+- 'window.scrollY', 'window.innerHeight', 'image.offsetTop'
+- Sliding elements in is done by first translating them (transform:translateX(30%)) off their original position, and then adding a class to translate them back to appear when scrolling is done.
+- This effect can sometimes be considered overused/annoying, and should be used after consideration.
