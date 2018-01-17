@@ -86,10 +86,17 @@ Started 6th Jan 2018
 - Using splice, you can constantly check an array and remove old chars to keep it at a constant size
 - Cornify is a fun library to play with... Maybe next time I can make my own mini library just for fun :)
 
-
 ## Project 13: Slide In On Scroll
 - Assign values into well-named variables before going into loops and if statements
 - Debouncing - making sure a function is not called again until a certain amount of time has passed. This ensures you dont have 1 gazillion events happening whenever you scroll
 - 'window.scrollY', 'window.innerHeight', 'image.offsetTop'
 - Sliding elements in is done by first translating them (transform:translateX(30%)) off their original position, and then adding a class to translate them back to appear when scrolling is done.
 - This effect can sometimes be considered overused/annoying, and should be used after consideration.
+
+## Project 14: Object and Arrays - Reference VS Copy
+- Strings, Numbers & Booleans pass by value (a copy of it)
+- Arrays & Objects pass by reference (linked to it)
+- This can be solved by using methods that create a copy of the array/object
+- Array: 'arr.slice()' , '[].concat(arr)' , '[...arr]' , 'Array.from(arr)'
+- Object: 'Object.assign({}, arr, {number:99})'
+
