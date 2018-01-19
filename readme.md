@@ -100,3 +100,11 @@ Started 6th Jan 2018
 - Array: 'arr.slice()' , '[].concat(arr)' , '[...arr]' , 'Array.from(arr)'
 - Object: 'Object.assign({}, arr, {number:99})'
 
+## Project 15: LocalStorage and Event Delegation
+- LocalStorage is a object that exists in the window, existing differently in each browser/pc
+- retrieval of objects in localStorage is done through .toString, thus JSON.stringify should be done before storing items.
+- e.preventDefault => useful to stop automatic browser refresh
+- custom data attributes (data-) allow for information to be accessed between HTML,DOM and scripts
+- Event Listeners can be nested for multiple purposes (listen for even, check listener for e.target) 
+- 
+
