@@ -121,5 +121,8 @@ Started 6th Jan 2018
 - check if string includes an array of values using `arr.some` and `includes`
 - Style radiobuttons as normal buttons by putting them within labels and styling the labels
 
+## Project 18: Tally String Times with Reduce
+- dataset.time access the [data-time] attribute
+- map function is pretty convenient, you can use it to replace each value inside an array, loop over each value and calculate a new value (with multiple lines of operations)
+- reduce takes 2 params -> a new var to store values, and name of var that stores each looped element
 
-## Project 18: Mouse Move Shadow
