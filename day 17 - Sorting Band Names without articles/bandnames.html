@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sort Without Articles</title>
+</head>
+<body>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #band-content{
+      margin:auto;
+
+    }
+
+    h1{
+      text-align: center;
+      padding-bottom:5px;
+      margin-top:120px;
+      font-size:48px;
+    }
+
+    #buttons{
+      text-align: center;
+      margin: 20px 20px 50px 20px;
+    }
+
+    label{
+      border:1px solid #999999;
+      color:black;
+      border-radius:4px;
+      padding:10px 10px 10px 10px;
+      margin-left: 10px;
+      font-size:24px;
+      background-color: rgba(200,200,200,0.5)
+    }
+
+    label:hover, label.active{
+      
+      background-color: rgba(30,255,30,1);
+      color:black;
+      cursor: pointer;
+    }
+
+    input{
+      display:none;
+    }
+
+    #bands {
+      list-style: inside disc;
+      font-size: 20px;
+      background: white;
+      width: 500px;
+      margin: auto;
+      padding: 0;
+      margin-bottom: 50px;
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    #bands li {
+      border-bottom: 1px solid #efefef;
+      padding: 20px;
+    }
+    #bands li:last-child {
+      border-bottom: 0;
+    }
+
+    a {
+      color: #ffc600;
+      text-decoration: none;
+    }
+
+  </style>
+
+  <div id="band-content">
+
+    <h1 id="bandTitle">Band Names </h1>
+
+    <div id="buttons">
+      <label for="with">Sort w/ Articles<input id="with" type="radio" name="with"/> </label>
+      <label for="without" class="active">Sort w/out Articles<input id="without" type="radio" name="with"/> </label>
+    </div>  
+
+    <ul id="bands">
+      
+    </ul>
+  
+  </div>
+
+<script>
+const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+const bandList = document.querySelector('#bands');
+const labels = document.querySelectorAll('label');
+
+sortWithoutArticles();
+
+labels.forEach(label => {
+
+  label.addEventListener('click',function(e){
+
+    if(e.target.tagName == "LABEL"){
+
+      bandList.innerHTML = '';
+        
+      document.querySelector('.active').classList.remove('active');
+
+      // console.log(`e.target is ${e.target}`);
+      e.target.classList.add('active');
+
+      let selected = document.querySelector('label.active').htmlFor;
+
+      selected == 'with' ? sortWithArticles() : sortWithoutArticles() ;
+    }
+
+  });
+
+});
+
+function sortWithArticles(){
+  bands.sort();
+  fillList(bands);
+}
+
+function sortWithoutArticles(){
+
+  let bandsRemoveA = [];
+  let articles = ["The","An", "A"];
+
+  bands.forEach(band => {
+    let firstFour = band.substring(0,3);
+
+    if(articles.some(ar => firstFour.includes(ar)))
+    {
+      let newStr = band.replace(/the |an |a /gi,'');
+      bandsRemoveA.push(newStr);
+    }
+
+    else{ bandsRemoveA.push(band); }
+    
+  });
+
+  bandsRemoveA.sort();
+
+  bandsRemoveA.map((bandname, i) => {
+
+      bands.forEach(band => {
+
+        if(band.includes(bandname)){
+          bandsRemoveA[i] = band;
+        }
+
+      });
+
+  });
+
+  fillList(bandsRemoveA);
+
+}
+
+function fillList(list){
+
+  list.forEach(item => bandList.innerHTML += (`<li> ${item} </li>`) );
+
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>

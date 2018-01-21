@@ -106,5 +106,20 @@ Started 6th Jan 2018
 - e.preventDefault => useful to stop automatic browser refresh
 - custom data attributes (data-) allow for information to be accessed between HTML,DOM and scripts
 - Event Listeners can be nested for multiple purposes (listen for even, check listener for e.target) 
-- 
 
+## Project 16: Mouse Move Shadow
+- having a 'contenteditable' property makes the element content editable
+- whole lot of offset values to play with(gotta find out what each of them mean) : offsetLeft (directional words), offsetX/Y (axis), offsetWidth (dimensional)
+- using ES6 `backtick` to add multiple lines of values w/ variables makes a code block look a lot nicer
+- Checking `this` against `e.target` to know what element we're actually selecting/listening to
+
+## Project 17: Sorting Band Names without Articles
+- str.replace returns a new str, and does not edit the existing str. Need to store it in a variable
+- When selecting multiple elements in eventlistener, you can use e.target.tagName or e.target.type to identify element
+- access element's 'for' attribute using 'htmlFor'
+- you can have multiple selectors in str.replace using a single || or sign `band.replace(/the |an |a /gi,'')`
+- check if string includes an array of values using `arr.some` and `includes`
+- Style radiobuttons as normal buttons by putting them within labels and styling the labels
+
+
+## Project 18: Mouse Move Shadow
