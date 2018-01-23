@@ -126,3 +126,5 @@ Started 6th Jan 2018
 - map function is pretty convenient, you can use it to replace each value inside an array, loop over each value and calculate a new value (with multiple lines of operations)
 - reduce takes 2 params -> a new var to store values, and name of var that stores each looped element
 
+## Project 19: Unreal Webcam Fun
+- 
