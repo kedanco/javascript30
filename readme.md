@@ -128,4 +128,14 @@ Started 6th Jan 2018
 
 ## Project 19: Unreal Webcam Fun
 - getImageData returns pixels info: for each pixels there are 4 values, rgb Alpha
+- Filters work by applying changes to the pixels, and then returning it to the main function before setting it (to display)
+- ctx.drawImage used to display the video
+- ctx.getImageData used to retrieve pixels
+- canvas.toDataURL('image/jpg') creates an image file for download (with set attribute)
+
+## Project 20: Speech Detection
+- SpeechRecognition only available in Firefox, so we use webkit
+- speechRecog, interimResult = true allows the text to update AS you are speaking, not after
+- document.createElement and div.appendChild() allows you to add a paragraph of words
 - 
+
