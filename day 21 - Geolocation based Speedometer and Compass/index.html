@@ -67,7 +67,7 @@
       speed.textContent = data.coords.speed;
       arrow.style.transform = `rotate(${data.coords.heading}deg)`;
       console.log(`lat: ${data.coords.lat}`});
-      console.log(`lat: ${data.coords.lon}`);
+      console.log(`lng: ${data.coords.lng}`);
     }, (err) => {
       console.err(err);
       alert('Omg error');

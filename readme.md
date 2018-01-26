@@ -137,5 +137,8 @@ Started 6th Jan 2018
 - SpeechRecognition only available in Firefox, so we use webkit
 - speechRecog, interimResult = true allows the text to update AS you are speaking, not after
 - document.createElement and div.appendChild() allows you to add a paragraph of words
-- 
 
+## Project 21: Geolocation Speedometer & Compass
+- navigator has quite a number of interesting functions :o
+- navigator.geolocation.watchPosition gets all relevant data
+- Possible to do more exploration with the data it provides
