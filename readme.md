@@ -127,4 +127,5 @@ Started 6th Jan 2018
 - reduce takes 2 params -> a new var to store values, and name of var that stores each looped element
 
 ## Project 19: Unreal Webcam Fun
+- getImageData returns pixels info: for each pixels there are 4 values, rgb Alpha
 - 
