@@ -142,3 +142,8 @@ Started 6th Jan 2018
 - navigator has quite a number of interesting functions :o
 - navigator.geolocation.watchPosition gets all relevant data
 - Possible to do more exploration with the data it provides
+
+## Project 22: Follow Along Links
+- element.getBoundingClientRect() retrieves the element's width, height, and position values
+- mouseenter event for 'hover' event listening
+- 
