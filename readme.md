@@ -146,4 +146,4 @@ Started 6th Jan 2018
 ## Project 22: Follow Along Links
 - element.getBoundingClientRect() retrieves the element's width, height, and position values
 - mouseenter event for 'hover' event listening
-- 
+- using multiple linear-gradient values can give you a pretty colourful background
