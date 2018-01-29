@@ -151,3 +151,4 @@ Started 6th Jan 2018
 ## Project 23: Follow Along Links
 - SpeechSynthesisUtterance() is the main function that says out the words, speechSynthesis
 - Used a loop to get all voices, populate a list, and listen to change event to allocate the selected voice to the speechSynthesis
+
