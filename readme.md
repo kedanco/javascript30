@@ -147,3 +147,7 @@ Started 6th Jan 2018
 - element.getBoundingClientRect() retrieves the element's width, height, and position values
 - mouseenter event for 'hover' event listening
 - using multiple linear-gradient values can give you a pretty colourful background
+
+## Project 23: Follow Along Links
+- SpeechSynthesisUtterance() is the main function that says out the words, speechSynthesis
+- Used a loop to get all voices, populate a list, and listen to change event to allocate the selected voice to the speechSynthesis
