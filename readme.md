@@ -152,3 +152,7 @@ Started 6th Jan 2018
 - SpeechSynthesisUtterance() is the main function that says out the words, speechSynthesis
 - Used a loop to get all voices, populate a list, and listen to change event to allocate the selected voice to the speechSynthesis
 
+## Project 24: Sticky Nav
+- fixed elements do not take up space in the browser, they float above other elements
+- simple action of adding/remove classes can trigger width/height related css that starts animations
+- combine offsetTop and padding to prevent elements from shifting after navbar is fixed
