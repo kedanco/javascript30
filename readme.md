@@ -162,3 +162,7 @@ Started 6th Jan 2018
 - 'capture' option - run function on the way in (bubble down from outside to inside elements)
 - e.stopPropagation stops the bubbling, and you'll only trigger the exact element you click
 - 'once' option - run the event listener once and then unbind itself (one off listener) e.g. store checkout - only click once
+
+## Project 26: Stripe Follow Along Dropdown
+- Using element's GetBoundingClientRect() and then transforming the offset values allows for a fixed positioning of the dropdown menu
+- using setTimeout() to sync the appearance of menu content and background box
