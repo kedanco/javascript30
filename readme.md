@@ -156,3 +156,9 @@ Started 6th Jan 2018
 - fixed elements do not take up space in the browser, they float above other elements
 - simple action of adding/remove classes can trigger width/height related css that starts animations
 - combine offsetTop and padding to prevent elements from shifting after navbar is fixed
+
+## Project 25: Event Capture, Propagation, Bubbling and Once
+- Bubbling > Clicking on a nested element will also trigger a click on the wrapping elements. text > div > body > html etc.
+- 'capture' option - run function on the way in (bubble down from outside to inside elements)
+- e.stopPropagation stops the bubbling, and you'll only trigger the exact element you click
+- 'once' option - run the event listener once and then unbind itself (one off listener) e.g. store checkout - only click once
