@@ -166,3 +166,11 @@ Started 6th Jan 2018
 ## Project 26: Stripe Follow Along Dropdown
 - Using element's GetBoundingClientRect() and then transforming the offset values allows for a fixed positioning of the dropdown menu
 - using setTimeout() to sync the appearance of menu content and background box
+
+## Project 27: Click and Drag to Scroll
+- CSS > Perspective allows for z-plane tilting of elements. 
+- CSS > will-change allows you to indicate elements that require earlier rendering/prep before it actually happens
+        e.g. flipping album, slide transitions **use sparingly
+- CSS > user-select: none; prevents user from selecting text
+- Combining e.pageX, slider.ScrollLeft, slider.offsetLeft to determine how much the mouse drags, and apply it to slider
+
