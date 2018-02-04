@@ -45,7 +45,6 @@
       slider.classList.add('active');
       startX = e.pageX - slider.offsetLeft;
       scrollLeft = slider.scrollLeft;
-      console.log(startX);
     }); 
 
     slider.addEventListener('mouseleave', () => {
@@ -65,6 +64,17 @@
       const walk = x - startX;
       slider.scrollLeft = scrollLeft - walk;
     });
+
+
+    links.forEach(link => {
+
+        var text = link.innerHTML;
+        var num = text.split('(');
+        numbers.push(num[1]);
+
+    });
+
+    numbers;
 
 
 </script>

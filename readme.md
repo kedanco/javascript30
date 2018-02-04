@@ -170,7 +170,11 @@ Started 6th Jan 2018
 ## Project 27: Click and Drag to Scroll
 - CSS > Perspective allows for z-plane tilting of elements. 
 - CSS > will-change allows you to indicate elements that require earlier rendering/prep before it actually happens
-        e.g. flipping album, slide transitions **use sparingly
+e.g. flipping album, slide transitions **use sparingly
 - CSS > user-select: none; prevents user from selecting text
 - Combining e.pageX, slider.ScrollLeft, slider.offsetLeft to determine how much the mouse drags, and apply it to slider
+
+## Project 28: Video Speed Controller UI
+- Using this.offsetHeight, this.offsetTop and e.pageY to calculate Y values of mouse 
+- Using y value as a percentage, then calculating the playbackRate from it
 
