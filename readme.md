@@ -178,7 +178,9 @@ e.g. flipping album, slide transitions **use sparingly
 - Using this.offsetHeight, this.offsetTop and e.pageY to calculate Y values of mouse 
 - Using y value as a percentage, then calculating the playbackRate from it
 
-## Project 29: Video Speed Controller UI
+## Project 29: Countdown Clock
 - clearInterval removes any existing interval
 - e.preventDefault on a submit button prevents data submission through URL
-- 
+
+## Project 30: Whack-A-Mole Game
+-
