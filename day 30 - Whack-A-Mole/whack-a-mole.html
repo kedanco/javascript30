@@ -10,7 +10,19 @@
 
   <h1>Whack-a-mole! <span class="score">0</span></h1>
   
-  <button class="start-btn" onClick="startGame()">Start!</button>
+  <div class="options">
+    
+    <input type="text" placeholder="15" value="15">
+
+    <select>
+      <option value="1">Easy</option>
+      <option value="1.25">Medium</option>
+      <option value="1.5">Hard</option>
+    </select>
+
+    <button class="start-btn" onClick="startGame()">Start!</button>
+
+  </div>
 
   <div class="game">
     <div class="hole hole1">
@@ -47,9 +59,18 @@
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
   const button = document.querySelector('.start-btn');
+  const dropdown = document.querySelector('select');
+  const input = document.querySelector('input');
+
   let lastHole;
   let timeUp = false;
   let score = 0;
+  let timeMin;
+  let timeMax;
+  let timeLimit = input.value * 1000;
+
+  setDifficulty(dropdown.value);
+  console.log(timeMin,timeMax);
 
   function randomTime(min,max){
     return Math.round(Math.random() * (max-min) + min);
@@ -68,7 +89,7 @@
   }
 
   function peep(){
-    const time = randomTime(200,1000);
+    const time = randomTime(timeMin,timeMax);
     const hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(() => {
@@ -81,7 +102,7 @@
     score, scoreBoard.textContent = 0;
     timeUp = false;
     peep();
-    setTimeout(() => timeUp = true, 10000);
+    setTimeout(() => timeUp = true, timeLimit);
   }
 
   function bonk(e){
@@ -91,7 +112,16 @@
     scoreBoard.textContent = score;
   }
 
+  function setDifficulty(diff){
+    timeMin = 200 / diff;
+    timeMax = 1000 / diff;
+  }
+
   moles.forEach(mole => mole.addEventListener('click', bonk));
+
+  dropdown.addEventListener('change', function(){
+    setDifficulty(dropdown.value);
+  });
 
 
 </script>
