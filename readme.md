@@ -183,4 +183,6 @@ e.g. flipping album, slide transitions **use sparingly
 - e.preventDefault on a submit button prevents data submission through URL
 
 ## Project 30: Whack-A-Mole Game
--
+- You can compare node elements with === operator
+- val() is assignment, .value is retrieval
+- Can add/remove classes to trigger css 'events' which looks like animation
