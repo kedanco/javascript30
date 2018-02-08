@@ -21,6 +21,31 @@ h1 {
   margin-bottom: 0;
 }
 
+.options{
+  display:flex;
+  margin: 30px auto 0px auto;
+  width: 550px;
+  align-content: center;
+  justify-content: center;
+}
+
+label{
+  font-size: 24px;
+  margin: auto 3px;
+  font-weight: bold;
+
+}
+
+input, select{
+  display:inline-block;
+  margin:auto auto;
+  height: 30px;
+  padding: 3px 3px;
+  background-color: rgba(80,140,80,0.8);
+  border: 1px solid black;
+  outline: none;
+}
+
 .score {
   background:rgba(255,255,255,0.2);
   padding:0 3rem;
@@ -32,7 +57,7 @@ h1 {
   
   font-size: 30px;
   display:flex;
-  margin: 5px auto 0px auto;
+  margin: 0px auto;
   background-color: rgba(20,200,20,0.8);
   border-radius: 5px;
   padding: 8px 8px;

@@ -12,17 +12,21 @@
   
   <div class="options">
     
-    <input type="text" placeholder="15" value="15">
+    <label for="time" >Time Limit: 
+    </label>
+      <input name="time" type="text" placeholder="15" value="15">
 
-    <select>
-      <option value="1">Easy</option>
-      <option value="1.25">Medium</option>
-      <option value="1.5">Hard</option>
-    </select>
-
-    <button class="start-btn" onClick="startGame()">Start!</button>
+    <label for="difficulty">Difficulty:
+    </label>
+      <select name="difficulty">
+        <option value="1">Easy</option>
+        <option value="1.25">Medium</option>
+        <option value="1.5">Hard</option>
+      </select>
+   <button class="start-btn" onClick="startGame()">Start!</button>
 
   </div>
+
 
   <div class="game">
     <div class="hole hole1">
