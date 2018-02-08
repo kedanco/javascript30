@@ -24,7 +24,7 @@ h1 {
 .options{
   display:flex;
   margin: 30px auto 0px auto;
-  width: 550px;
+  width: 600px;
   align-content: center;
   justify-content: center;
 }
