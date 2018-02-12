@@ -5,7 +5,7 @@
 
 <b>My Javascript 30 Notes</b>
 
-Started 6th Jan 2018
+6th Jan 2018 - 6th Feb 2018
 
 ## Project 1: Drum Kit
 - For keycode/charcode listening, a more supported way is to use e.which (covers both char and key code)

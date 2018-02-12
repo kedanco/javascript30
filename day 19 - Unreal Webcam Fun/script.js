@@ -34,7 +34,7 @@ function paintToCanvas(){
     let pixels = ctx.getImageData(0,0,width,height);
     // mess with them
     // pixels = redEffect(pixels);
-    // pixels = rgbSplit(pixels);
+    pixels = rgbSplit(pixels);
     pixels = greenScreen(pixels);
 
     // stacking frames, ghosting effect
